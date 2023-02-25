@@ -13,7 +13,7 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
             </div>
             <div class="modal-body">
-                <p class="mb-1"><t:localize key="areYouSureToPayFine"/>?</p>
+                <p class="my-0"><t:localize key="areYouSureToPayFine"/>?</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>

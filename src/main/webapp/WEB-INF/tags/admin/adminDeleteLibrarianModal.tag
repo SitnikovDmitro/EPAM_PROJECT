@@ -15,7 +15,7 @@
                 </div>
                 <div class="modal-body">
                     <input type="hidden" id="userIdInput" name="userId">
-                    <p class="mb-1"><t:localize key="areYouSureToDeleteLibrarian"/> <span id="userFullnameSpan"></span>?</p>
+                    <p class="my-0"><t:localize key="areYouSureToDeleteLibrarian"/> <span id="userFullnameSpan"></span>?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><t:localize key="cancel"/></button>

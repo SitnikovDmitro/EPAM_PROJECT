@@ -68,7 +68,7 @@ public class BookDAOImpl implements BookDAO {
         String selection, orderCriteria, orderType;
 
         StringJoiner conditions = new StringJoiner(" AND ");
-        if (userId != null) conditions.add("id IN (SELECT bookmarks.bookId FROM bookmarks WHERE bookmarks.userId = "+userId+")");
+        if (userId != null) conditions.add("books.id IN (SELECT bookmarks.bookId FROM bookmarks WHERE bookmarks.userId = "+userId+")");
         if (publisherQuery != null) conditions.add("LOWER(publishers.title) LIKE ?");
         if (isbn != null) conditions.add("books.isbn = "+isbn);
         if (titleQuery != null && !titleQuery.isBlank()) conditions.add("LOWER(books.title) LIKE ?");
@@ -119,7 +119,7 @@ public class BookDAOImpl implements BookDAO {
     @Override
     public int countBooks(Integer userId, Integer isbn, String publisherQuery, String titleQuery, String authorQuery, BookGenre genre, BookLanguage language, BookFormat format) throws DatabaseException {
         StringJoiner conditions = new StringJoiner(" AND ");
-        if (userId != null) conditions.add("id IN (SELECT bookmarks.bookId FROM bookmarks WHERE bookmarks.userId = "+userId+")");
+        if (userId != null) conditions.add("books.id IN (SELECT bookmarks.bookId FROM bookmarks WHERE bookmarks.userId = "+userId+")");
         if (publisherQuery != null) conditions.add("LOWER(publishers.title) LIKE ?");
         if (isbn != null) conditions.add("books.isbn = "+isbn);
         if (titleQuery != null && !titleQuery.isBlank()) conditions.add("LOWER(books.title) LIKE ?");

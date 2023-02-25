@@ -196,7 +196,7 @@
   "blocked": "Blocked",
   "message": "Message",
   "justNow": "just now",
-  "linkWasSentMessage": "Link was sent to your email. Check it",
+  "linkWasSentMessage": "Link was sent to your email. Check it. If you did not receive the link, check your email address is correct",
   "first": "First",
   "last": "Last",
   "previous": "Previous",
@@ -223,5 +223,6 @@
   "inputQueryToFindPublisher": "Input query to find publisher",
   "totalCopiesNumberIsLessThanCopiesNumberInUse": "Total copies number is less than number of copies in use",
   "areYouSureToConfirmOrder": "Are you sure to confirm order",
-  "specifyDeadlineDate": "Specify a deadline date"
+  "specifyDeadlineDate": "Specify a deadline date",
+  "unblockReader": "Unblock reader"
 }

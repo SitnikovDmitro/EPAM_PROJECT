@@ -60,7 +60,7 @@
                 </div>
 
                 <div class="collapse card-body border-bottom" id="passwordEditionBlock">
-                    <div class="row mb-2">
+                    <div class="row">
                         <div class="col pr-2">
                             <label for="passwordInput" class="form-label"><t:localize key="password"/></label>
                             <input type="password" class="form-control" id="passwordInput" name="password">
@@ -70,7 +70,7 @@
                         <div class="col pl-2">
                             <label for="passwordConfirmInput" class="form-label"><t:localize key="passwordConfirm"/></label>
                             <input type="password" class="form-control" id="passwordConfirmInput" name="passwordConfirm">
-                            <div class="invalid-feedback" id="passwordConfirmInvalidFeedback"></div>
+                            <div class="invalid-feedback"><t:localize key="passwordsDoNotMatch"/></div>
                             <div class="valid-feedback"><t:localize key="valid"/></div>
                         </div>
                     </div>

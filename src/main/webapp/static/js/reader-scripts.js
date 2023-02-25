@@ -118,7 +118,9 @@ function editProfile(contextPath) {
         response => response.json()
     ).then(
         data => {
-            if (data.success) {
+            var passwordConfirmValid = passwordConfirmInput.value == passwordInput.value && passwordConfirmInput.value != null && passwordConfirmInput.value != "";
+
+            if (data.success && passwordConfirmValid) {
                 window.location.reload();
             } else {
                 if (data.firstnameValid) {
@@ -157,13 +159,12 @@ function editProfile(contextPath) {
                     passwordInvalidFeedback.innerText = data.passwordValidationFeedback;
                 }
 
-                if (data.passwordConfirmValid) {
+                if (passwordConfirmValid) {
                     passwordConfirmInput.classList.remove("is-invalid");
                     passwordConfirmInput.classList.add("is-valid");
                 } else {
                     passwordConfirmInput.classList.remove("is-valid");
                     passwordConfirmInput.classList.add("is-invalid");
-                    passwordConfirmInvalidFeedback.innerText = data.passwordConfirmValidationFeedback;
                 }
             }
         }

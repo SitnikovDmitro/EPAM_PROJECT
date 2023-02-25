@@ -15,7 +15,7 @@
                 </div>
                 <div class="modal-body">
                     <input type="hidden" id="cancelOrderCodeInput" name="orderCode">
-                    <p class="mb-1"><t:localize key="areYouSureToCancelOrder"/></p>
+                    <p class="my-0"><t:localize key="areYouSureToCancelOrder"/></p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><t:localize key="cancel"/></button>

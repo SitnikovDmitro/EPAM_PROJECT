@@ -327,7 +327,9 @@ function createLibrarian(contextPath) {
         response => response.json()
     ).then(
         data => {
-            if (data.success) {
+            var passwordConfirmValid = passwordConfirmInput.value == passwordInput.value && passwordConfirmInput.value != null && passwordConfirmInput.value != "";
+
+            if (data.success && passwordConfirmValid) {
                 window.location.href = contextPath+"/admin/librarians/show";
             } else {
                 if (data.firstnameValid) {
@@ -366,7 +368,7 @@ function createLibrarian(contextPath) {
                     passwordInvalidFeedback.innerText = data.passwordValidationFeedback;
                 }
 
-                if (passwordConfirmInput.value == passwordInput.value && passwordConfirmInput.value != null && passwordConfirmInput.value != "") {
+                if (passwordConfirmValid) {
                     passwordConfirmInput.classList.remove("is-invalid");
                     passwordConfirmInput.classList.add("is-valid");
                 } else {

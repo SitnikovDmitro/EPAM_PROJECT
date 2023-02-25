@@ -6,7 +6,7 @@
 
 
 <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-    <div id="messageToast" class="toast" role="alert">
+    <div id="messageToast" class="toast hide" role="alert">
         <div class="toast-header">
             <strong class="me-auto"><t:localize key="message"/></strong>
             <small><t:localize key="justNow"/></small>

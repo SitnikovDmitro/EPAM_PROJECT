@@ -105,7 +105,9 @@ function signUp(contextPath) {
         response => response.json()
     ).then(
         data => {
-            if (data.success) {
+            var passwordConfirmValid = passwordConfirmInput.value == passwordInput.value && passwordConfirmInput.value != null && passwordConfirmInput.value != "";
+
+            if (data.success && passwordConfirmValid) {
                 window.location.href = contextPath+"/reader/books/show";
             } else {
                 if (data.captchaValid) {
@@ -151,7 +153,7 @@ function signUp(contextPath) {
                     passwordInvalidFeedback.innerText = data.passwordValidationFeedback;
                 }
 
-                if (passwordConfirmInput.value == passwordInput.value && passwordConfirmInput.value != null && passwordConfirmInput.value != "") {
+                if (passwordConfirmValid) {
                     passwordConfirmInput.classList.remove("is-invalid");
                     passwordConfirmInput.classList.add("is-valid");
                 } else {

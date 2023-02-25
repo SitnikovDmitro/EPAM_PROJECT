@@ -15,8 +15,8 @@
                 </div>
                 <div class="modal-body">
                     <input type="hidden" id="confirmOrderCodeInput" name="orderCode">
-                    <p class="mb-1"><t:localize key="areYouSureToConfirmOrder"/></p>
-                    <label for="confirmOrderDeadlineDateInput" class="form-label mt-2"><t:localize key="specifyDeadlineDate"/></label>
+                    <p class="my-0"><t:localize key="areYouSureToConfirmOrder"/></p>
+                    <label for="confirmOrderDeadlineDateInput" class="form-label mt-3"><t:localize key="specifyDeadlineDate"/></label>
                     <input type="date" class="form-control" id="confirmOrderDeadlineDateInput" name="orderDeadlineDate" min="<%= LocalDate.now().plusDays(7) %>" max="<%= LocalDate.now().plusDays(60) %>" required>
                 </div>
                 <div class="modal-footer">

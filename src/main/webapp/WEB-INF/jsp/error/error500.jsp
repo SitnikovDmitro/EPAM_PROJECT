@@ -13,7 +13,7 @@
          <script src="${pageContext.request.contextPath}/static/js/bootstrap.js"></script>
     </head>
     <body style="background-image: url('${pageContext.request.contextPath}/static/img/background.jpg'); background-repeat: no-repeat; background-attachment: fixed;">
-        <div class="container col-lg-4 col-md-5 col-sm-6 p-4">
+        <div class="d-flex justify-content-center p-4">
             <div class="card">
                 <img class="card-img-top" src="${pageContext.request.contextPath}/static/img/error.png" alt="Error image">
 

@@ -6,7 +6,7 @@
   <display-name>Archetype Created Web Application</display-name>
 
   <servlet>
-    <servlet-name>controller</servlet-name>
+    <servlet-name>dispatcher</servlet-name>
     <servlet-class>app.web.DispatcherServlet</servlet-class>
     <multipart-config>
       <max-file-size>1073741824</max-file-size>
@@ -14,7 +14,11 @@
   </servlet>
 
   <listener>
-    <listener-class>app.web.AppWebListener</listener-class>
+    <listener-class>app.web.AppServletContextListener</listener-class>
+  </listener>
+
+  <listener>
+    <listener-class>app.web.AppSessionListener</listener-class>
   </listener>
 
   <filter>
@@ -34,7 +38,7 @@
 
 
   <servlet-mapping>
-    <servlet-name>controller</servlet-name>
+    <servlet-name>dispatcher</servlet-name>
 
     <url-pattern>/admin/*</url-pattern>
     <url-pattern>/reader/*</url-pattern>
@@ -51,22 +55,22 @@
     <url-pattern>/language/change</url-pattern>
     <url-pattern>/publishers/find</url-pattern>
 
-    <url-pattern></url-pattern>
+    <url-pattern/>
   </servlet-mapping>
 
   <filter-mapping>
     <filter-name>encodingFilter</filter-name>
-    <servlet-name>controller</servlet-name>
+    <servlet-name>dispatcher</servlet-name>
   </filter-mapping>
 
   <filter-mapping>
     <filter-name>securityFilter</filter-name>
-    <servlet-name>controller</servlet-name>
+    <servlet-name>dispatcher</servlet-name>
   </filter-mapping>
 
   <filter-mapping>
     <filter-name>localizationFilter</filter-name>
-    <servlet-name>controller</servlet-name>
+    <servlet-name>dispatcher</servlet-name>
   </filter-mapping>
 
   <error-page>

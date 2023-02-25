@@ -8,14 +8,14 @@
 <div class="modal fade" id="payReaderFineModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form action="${pageContext.request.contextPath}/reader/fine/pay" method="post">
+            <form action="${pageContext.request.contextPath}/admin/reader/fine/pay" method="post">
                 <div class="modal-header">
                     <h5 class="modal-title" id="staticBackdropLabel"><t:localize key="payFine"/></h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
                     <input type="hidden" id="payFineUserIdInput" name="userId">
-                    <p class="mb-1"><t:localize key="areYouSureToPayReaderFine"/> <span id="payFineFullnameSpan"></span>?</p>
+                    <p class="my-0"><t:localize key="areYouSureToPayReaderFine"/> <span id="payFineFullnameSpan"></span>?</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
