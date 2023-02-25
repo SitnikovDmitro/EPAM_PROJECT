@@ -1,0 +1,70 @@
+2023-02-25 17:40:56.541 [main] INFO  app.database.pool.impl.H2ConnectionPoolImpl - Connection pool impl initialization finished successfully
+2023-02-25 17:41:05.363 [main] DEBUG app.controller.AdminController - Call unblock reader in admin controller with id = 1
+2023-02-25 17:41:05.488 [main] DEBUG app.controller.AdminController - Call show readers in admin controller with page = 1
+2023-02-25 17:41:05.691 [main] DEBUG app.controller.AdminController - Call show librarians in admin controller with page = 1
+2023-02-25 17:41:05.863 [main] DEBUG app.controller.AdminController - Call block reader in admin controller with id = 1
+2023-02-25 17:41:05.863 [main] DEBUG app.controller.AdminController - Call find books in admin controller
+2023-02-25 17:41:05.879 [main] DEBUG app.controller.AdminController - Call delete librarian in admin controller with id = 1
+2023-02-25 17:41:05.895 [main] DEBUG app.controller.AdminController - Call show books in admin controller with page = 1
+2023-02-25 17:41:06.285 [main] DEBUG app.service.entity.impl.OrderServiceImpl - Order closing with code = 1 started
+2023-02-25 17:41:06.285 [main] DEBUG app.service.entity.impl.OrderServiceImpl - Order closing with code = 1 successfully finished
+2023-02-25 17:41:06.301 [main] DEBUG app.service.entity.impl.OrderServiceImpl - Order cancel with code = 16 started
+2023-02-25 17:41:06.301 [main] DEBUG app.service.entity.impl.OrderServiceImpl - Order cancel with code = 16 successfully finished
+2023-02-25 17:41:06.316 [main] DEBUG app.service.entity.impl.OrderServiceImpl - Order deletion with code = 12 started
+2023-02-25 17:41:06.332 [main] DEBUG app.service.entity.impl.OrderServiceImpl - Order deletion with code = 12 successfully finished
+2023-02-25 17:41:06.348 [main] DEBUG app.service.entity.impl.UserServiceImpl - Edition user with id = 4 started
+2023-02-25 17:41:06.363 [main] DEBUG app.service.entity.impl.UserServiceImpl - Edition user with id = 4 successfully finished
+2023-02-25 17:41:06.379 [main] DEBUG app.service.entity.impl.UserServiceImpl - Edition user with id = 4 started
+2023-02-25 17:41:06.379 [main] INFO  app.service.entity.impl.UserServiceImpl - Edition user with id = 4 failed because of invalid edition parameters
+2023-02-25 17:41:06.379 [main] DEBUG app.service.entity.impl.UserServiceImpl - Edition user with id = 4 started
+2023-02-25 17:41:06.379 [main] INFO  app.service.entity.impl.UserServiceImpl - Edition user with id = 4 failed because of invalid edition parameters
+2023-02-25 17:41:06.394 [main] DEBUG app.service.entity.impl.UserServiceImpl - Extraction user by email = admin@gmail.com and password = 0000 started
+2023-02-25 17:41:06.410 [main] DEBUG app.service.entity.impl.UserServiceImpl - Extraction user by email = admin@gmail.com and password = 0000 successfully finished
+2023-02-25 17:41:06.426 [main] DEBUG app.service.entity.impl.UserServiceImpl - Extraction user by email = john@gmail.com and password = 124 started
+2023-02-25 17:41:06.426 [main] DEBUG app.service.entity.impl.UserServiceImpl - Extraction user by email = john@gmail.com and password = 124 failed because of user with given credentials is not exists
+2023-02-25 17:41:06.441 [main] DEBUG app.service.entity.impl.UserServiceImpl - Unlocking reader with id = 5 started
+2023-02-25 17:41:06.441 [main] DEBUG app.service.entity.impl.UserServiceImpl - Unlocking reader with id = 5 successfully finished
+2023-02-25 17:41:06.457 [main] DEBUG app.service.entity.impl.UserServiceImpl - Creation user with firstname = Ім, email = abcdn@nabcd.ml... started
+2023-02-25 17:41:06.473 [main] DEBUG app.service.entity.impl.UserServiceImpl - Creation user successfully finished
+2023-02-25 17:41:06.504 [main] DEBUG app.service.entity.impl.UserServiceImpl - Creation user with firstname = Ім1, email = admin@gmail.com... started
+2023-02-25 17:41:06.504 [main] INFO  app.service.entity.impl.UserServiceImpl - Creation user failed because of invalid creation parameters
+2023-02-25 17:41:06.519 [main] DEBUG app.service.entity.impl.UserServiceImpl - Blocking reader with id = 11 started
+2023-02-25 17:41:06.519 [main] DEBUG app.service.entity.impl.UserServiceImpl - Blocking reader with id = 11 successfully finished
+2023-02-25 17:41:06.535 [main] DEBUG app.service.entity.impl.UserServiceImpl - Paying fine of reader with id = 5 started
+2023-02-25 17:41:06.551 [main] DEBUG app.service.entity.impl.UserServiceImpl - Paying fine of reader with id = 5 successfully finished
+2023-02-25 17:41:06.566 [main] DEBUG app.service.entity.impl.UserServiceImpl - Creation user with firstname = New, email = n@n.ml... started
+2023-02-25 17:41:06.566 [main] DEBUG app.service.entity.impl.UserServiceImpl - Creation user successfully finished
+2023-02-25 17:41:06.582 [main] DEBUG app.service.entity.impl.UserServiceImpl - Creation user with firstname = New, email = nn... started
+2023-02-25 17:41:06.582 [main] INFO  app.service.entity.impl.UserServiceImpl - Creation user failed because of invalid creation parameters
+2023-02-25 17:41:06.598 [main] DEBUG app.service.entity.impl.UserServiceImpl - Deletion librarian with id = 2 started
+2023-02-25 17:41:06.598 [main] DEBUG app.service.entity.impl.UserServiceImpl - Deletion librarian with id = 2 successfully finished
+2023-02-25 17:41:08.300 [main] DEBUG app.service.entity.impl.FeedbackServiceImpl - Creation feedback on book with id = 1 by user with id = 5 started
+2023-02-25 17:41:08.316 [main] DEBUG app.service.entity.impl.FeedbackServiceImpl - Creation feedback on book with id = 1 successfully finished
+2023-02-25 17:41:08.331 [main] DEBUG app.service.entity.impl.FeedbackServiceImpl - Creation feedback on book with id = 1 by user with id = 5 started
+2023-02-25 17:41:08.331 [main] DEBUG app.service.entity.impl.FeedbackServiceImpl - Creation feedback on book with id = 1 by user with id = 5 started
+2023-02-25 17:41:08.331 [main] DEBUG app.service.entity.impl.FeedbackServiceImpl - Creation feedback on book with id = 1 by user with id = 1 started
+2023-02-25 17:41:08.331 [main] DEBUG app.service.entity.impl.FeedbackServiceImpl - Creation feedback on book with id = 1 by user with id = 2 started
+2023-02-25 17:41:08.519 [main] DEBUG app.controller.ReaderController - Call show profile in reader controller
+2023-02-25 17:41:08.535 [main] DEBUG app.controller.ReaderController - Call create order in reader controller with book id = 4
+2023-02-25 17:41:08.550 [main] DEBUG app.controller.ReaderController - Call add book to bookmarks in reader controller with book id = 4
+2023-02-25 17:41:08.566 [main] DEBUG app.controller.ReaderController - Call cancel order in reader controller with order code = 12
+2023-02-25 17:41:08.566 [main] DEBUG app.controller.ReaderController - Call delete book from bookmarks in reader controller with book id = 4
+2023-02-25 17:41:08.581 [main] DEBUG app.controller.ReaderController - Call create feedback in reader controller with book id = 1
+2023-02-25 17:41:08.581 [main] DEBUG app.controller.ReaderController - Call delete order in reader controller with order code = 12
+2023-02-25 17:41:08.863 [main] DEBUG app.controller.BookController - Call get book details (in json format) in book controller with id = 4
+2023-02-25 17:41:08.909 [main] DEBUG app.controller.BookController - Call get book content (in pdf format) in book controller with id = 4
+2023-02-25 17:41:09.441 [main] DEBUG app.service.entity.impl.BookServiceImpl - Edit book with id = 1, isbn = 3333, title = Title, author = Author ...
+2023-02-25 17:41:09.644 [main] DEBUG app.service.entity.impl.BookServiceImpl - Book edition with id = 1 successfully finished
+2023-02-25 17:41:09.644 [main] DEBUG app.service.entity.impl.BookServiceImpl - Edit book with id = 1, isbn = 3333, title = Title+, author = Author ...
+2023-02-25 17:41:09.644 [main] INFO  app.service.entity.impl.BookServiceImpl - Book edition failed because of invalid edition parameters
+2023-02-25 17:41:09.644 [main] DEBUG app.service.entity.impl.BookServiceImpl - Creation book with isbn = 1288, title = Title, author = Author... started
+2023-02-25 17:41:09.659 [main] DEBUG app.service.entity.impl.BookServiceImpl - Book creation with id = 0 successfully finished
+2023-02-25 17:41:09.659 [main] DEBUG app.service.entity.impl.BookServiceImpl - Creation book with isbn = 3333, title = Title+, author = Author... started
+2023-02-25 17:41:09.659 [main] INFO  app.service.entity.impl.BookServiceImpl - Book creation failed because of invalid creation parameters
+2023-02-25 17:41:09.675 [main] DEBUG app.service.entity.impl.BookServiceImpl - Deletion book with id = 1 started
+2023-02-25 17:41:09.675 [main] DEBUG app.service.entity.impl.BookServiceImpl - Deletion book with id = 1 successfully finished
+2023-02-25 17:41:10.065 [main] DEBUG app.controller.LibrarianController - Call generate readers information table in librarian controller
+2023-02-25 17:41:10.081 [main] DEBUG app.controller.LibrarianController - Call close order in librarian controller with code = 12
+2023-02-25 17:41:10.097 [main] DEBUG app.controller.LibrarianController - Call cancel order in librarian controller with code = 12
+2023-02-25 17:41:10.097 [main] DEBUG app.controller.LibrarianController - Call confirm order in librarian controller with code = 12
+2023-02-25 17:41:10.112 [main] DEBUG app.controller.LibrarianController - Call generate books information table in librarian controller

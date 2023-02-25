@@ -1,0 +1,47 @@
+.lspan {
+   order: 1;
+}
+
+.mspan {
+  order: 2;
+  flex-grow: 1;
+  margin: 0px 5px;
+  background: linear-gradient(to right, silver, silver);
+  background-position: 0% 62%;
+  background-size: 100% 1.5px;
+  background-repeat: repeat-x;
+}
+
+.rspan {
+  float: right;
+  order: 3;
+}
+
+.property-text {
+  display: flex;
+  line-height: 1em;
+}
+
+.lc {
+    height: 100%;
+    border-radius: 60px 20px 20px 60px;
+    border-width: 10px;
+    background: linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(180deg, purple, orange) border-box;
+}
+
+.mc {
+    height: 100%;
+    border-radius: 20px 20px 20px 20px;
+    border-width: 10px;
+    background: linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(180deg, purple, orange) border-box;
+}
+
+.rc {
+    height: 100%;
+    border-radius: 20px 60px 60px 20px;
+    border-width: 10px;
+    background: linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(180deg, purple, orange) border-box;
+}

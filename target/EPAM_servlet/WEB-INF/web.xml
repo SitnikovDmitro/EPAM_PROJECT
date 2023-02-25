@@ -1,0 +1,82 @@
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+  <display-name>Archetype Created Web Application</display-name>
+
+  <servlet>
+    <servlet-name>controller</servlet-name>
+    <servlet-class>app.web.DispatcherServlet</servlet-class>
+    <multipart-config>
+      <max-file-size>1073741824</max-file-size>
+    </multipart-config>
+  </servlet>
+
+  <listener>
+    <listener-class>app.web.AppWebListener</listener-class>
+  </listener>
+
+  <filter>
+    <filter-name>encodingFilter</filter-name>
+    <filter-class>app.web.EncodingFilter</filter-class>
+  </filter>
+
+  <filter>
+    <filter-name>securityFilter</filter-name>
+    <filter-class>app.web.SecurityFilter</filter-class>
+  </filter>
+
+  <filter>
+    <filter-name>localizationFilter</filter-name>
+    <filter-class>app.web.LocalizationFilter</filter-class>
+  </filter>
+
+
+  <servlet-mapping>
+    <servlet-name>controller</servlet-name>
+
+    <url-pattern>/admin/*</url-pattern>
+    <url-pattern>/reader/*</url-pattern>
+    <url-pattern>/librarian/*</url-pattern>
+    <url-pattern>/guest/*</url-pattern>
+    <url-pattern>/book/*</url-pattern>
+
+    <url-pattern>/sign-in</url-pattern>
+    <url-pattern>/sign-up</url-pattern>
+    <url-pattern>/logout</url-pattern>
+    <url-pattern>/error</url-pattern>
+    <url-pattern>/access/get</url-pattern>
+    <url-pattern>/access-link/send</url-pattern>
+    <url-pattern>/language/change</url-pattern>
+    <url-pattern>/publishers/find</url-pattern>
+
+    <url-pattern></url-pattern>
+  </servlet-mapping>
+
+  <filter-mapping>
+    <filter-name>encodingFilter</filter-name>
+    <servlet-name>controller</servlet-name>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>securityFilter</filter-name>
+    <servlet-name>controller</servlet-name>
+  </filter-mapping>
+
+  <filter-mapping>
+    <filter-name>localizationFilter</filter-name>
+    <servlet-name>controller</servlet-name>
+  </filter-mapping>
+
+  <error-page>
+    <error-code>404</error-code>
+    <location>/WEB-INF/jsp/error/error404.jsp</location>
+  </error-page>
+
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/WEB-INF/jsp/error/error500.jsp</location>
+  </error-page>
+
+</web-app>

@@ -1,0 +1,5 @@
+{
+  "password":"",
+  "user":"sa",
+  "url":"jdbc:h2:mem:~/test;DB_CLOSE_DELAY=-1;DATABASE_TO_UPPER=false;MODE=MYSQL"
+}

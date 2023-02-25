@@ -1,0 +1,31 @@
+<div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Select publisher or create new</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control mb-3" placeholder="Publisher query">
+
+                <div class="d-flex justify-content-center mb-3" hidden>
+                    <div class="spinner-border text-primary" role="status" hidden></div>
+                </div>
+
+                <div class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action active" id="b1" data-value="Publisher RANOK">Publisher RANOK</button>
+                    <button type="button" class="list-group-item list-group-item-action" id="b2" data-value="New yourk times">New yourk times</button>
+                    <button type="button" class="list-group-item list-group-item-action" id="b3" data-value="Canada">Canada</button>
+                    <button type="button" class="list-group-item list-group-item-action" id="b4" data-value="UK books">UK books</button>
+                </div>
+
+                <input type="hidden" id="publisherNameInput" name="publisherName">
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Create new and select</button>
+            </div>
+        </div>
+    </div>
+</div>
